@@ -11,7 +11,9 @@ app.use(express.urlencoded({ extended: true }));
 require('./initDB')();
 
 const ProductRoute = require('./Routes/Product.route');
+const EventRoute = require('./Routes/Event.route.js');
 app.use('/products', ProductRoute);
+app.use('/events', EventRoute);
 
 //404 handler and pass to error handler
 app.use((req, res, next) => {

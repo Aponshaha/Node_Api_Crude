@@ -26,28 +26,40 @@ Content-Type: application/json
 DELETE  http://localhost:3000/products/5df118b3c86e5826958b661a
 
 ### 404 route Not Found
-GET http://localhost:3000/abc_xyz
+GET http://localhost:3000/events/data
 
 
+### post event data
+
+POST http://localhost:3000/events
+Content-Type: application/json
+
+[
+  {
+    "schedule": {
+      "year":[2020], 
+      "month": [10]
+    },
+    "data": {
+      "title": "Start"
+    }
+  },
+  {
+    "schedule": {
+      "dayOfMonth" : [10], 
+      "year" : [2020]
+    },
+    "data": {
+      "title": "End"
+    }
+  }
+]
 
 
+### Delete a product by id
+DELETE  http://localhost:3000/events/delete
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+### Delete
 
 
 
@@ -63,3 +75,7 @@ GET http://localhost:3000/abc_xyz
 
 
 #hrXWgw4Q127uqZJ3
+//data: {title: "123", description: "aaa", location: "aaa", color: "#1976d2", forecolor: "#ffffff",…}
+//durationUnit: "hours", dayOfMonth: [10], year: [2020], month: [2]}
+
+

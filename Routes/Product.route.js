@@ -2,6 +2,7 @@ const express = require('express');
 const router = express.Router();
 
 const ProductController = require('../Controllers/Product.Controller');
+const EventController = require('../Controllers/Event.Controller');
 
 //Get a list of all products
 router.get('/', ProductController.getAllProducts);
@@ -17,5 +18,13 @@ router.patch('/:id', ProductController.updateAProduct);
 
 //Delete a product by id
 router.delete('/:id', ProductController.deleteAProduct);
+
+
+// //event router
+// router.get('/events', EventController.getAllEvents);
+
+// //event post router 
+// router.post('/events', EventController.createNewEvent);
+
 
 module.exports = router;

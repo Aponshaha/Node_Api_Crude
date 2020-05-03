@@ -40,8 +40,9 @@ npm start
 
 ## Author
 
-- [**Truly Mittal**](https://trulymittal.com)
+- [**Apon Saha**]
 
 ## License
 
-This project is licensed under the MIT License.
+//
+
